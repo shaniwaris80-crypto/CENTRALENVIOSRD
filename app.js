@@ -82,13 +82,13 @@ function addContactActions(){
     .floating-cta{display:none!important}
     @media(max-width:760px){
       body.has-central-contact-bar{padding-bottom:82px}
-      .central-contact-bar{left:0;right:0;bottom:0;border-radius:18px 18px 0 0;padding:9px max(9px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom)) max(9px,env(safe-area-inset-left));display:grid;grid-template-columns:1fr 1.15fr 1.4fr;gap:7px}
-      .central-action{min-width:0;padding:0 7px;font-size:12px;min-height:56px;flex-direction:column;gap:2px;border-radius:12px;line-height:1.05;text-align:center}
+      .central-contact-bar{left:0;right:0;bottom:0;border-radius:18px 18px 0 0;padding:9px max(9px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom)) max(9px,env(safe-area-inset-left));display:grid;grid-template-columns:.85fr 1fr 1.55fr;gap:7px}
+      .central-action{min-width:0;padding:0 7px;font-size:12px;min-height:56px;flex-direction:column;gap:2px;border-radius:12px;line-height:1.05;text-align:center;white-space:normal}
       .central-action-icon{font-size:22px}
       .hero-contact-actions{display:grid;grid-template-columns:1fr 1fr;margin-top:12px}
       .hero-contact-actions .central-action{flex-direction:row;font-size:13px;min-height:48px}
     }
-    @media(max-width:390px){.central-action{font-size:11px}.central-action-icon{font-size:20px}}
+    @media(max-width:390px){.central-action{font-size:10.5px}.central-action-icon{font-size:20px}}
   `;
   document.head.appendChild(style);
 
@@ -100,7 +100,7 @@ function addContactActions(){
   bar.innerHTML=`
     <a class="central-action central-action-call" href="tel:${CENTRAL_PHONE_TEL}" aria-label="Llamar a Central Envíos RD"><span class="central-action-icon">📞</span><span>LLAMAR</span></a>
     <a class="central-action central-action-wa" href="${whatsappUrl(directMessage)}" target="_blank" rel="noopener" aria-label="Hablar por WhatsApp"><span class="central-action-icon">💬</span><span>WHATSAPP</span></a>
-    <a class="central-action central-action-pickup" href="#recogida" aria-label="Solicitar recogida"><span class="central-action-icon">📦</span><span>RECOGIDA</span></a>
+    <a class="central-action central-action-pickup" href="#recogida" aria-label="Solicitar recogida de caja"><span class="central-action-icon">📦</span><span>RECOGIDA DE CAJA</span></a>
   `;
   document.body.appendChild(bar);
   document.body.classList.add('has-central-contact-bar');
