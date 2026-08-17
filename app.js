@@ -1,6 +1,6 @@
-const CENTRAL_PHONE_DISPLAY='+34 631 667 83';
-const CENTRAL_PHONE_TEL='+3463166783';
-const CENTRAL_PHONE_WA='3463166783';
+const CENTRAL_PHONE_DISPLAY='+34 631 667 893';
+const CENTRAL_PHONE_TEL='+34631667893';
+const CENTRAL_PHONE_WA='34631667893';
 
 const menuBtn=document.querySelector('.menu-btn');
 const nav=document.querySelector('.nav');
