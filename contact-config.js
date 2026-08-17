@@ -1,0 +1,1 @@
+window.CENTRAL_CONTACT={display:'+34 631 667 893',tel:'+34631667893',wa:'34631667893'};
